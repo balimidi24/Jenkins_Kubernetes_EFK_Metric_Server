@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  remote_user: root
+  
+  tasks:
+    - name: To Run deployment
+      command: kubectl apply -f regapp-deployment.yml
+
+    - name: To Run Service
+      command: kubectl apply -f regapp-service.yml
+ 

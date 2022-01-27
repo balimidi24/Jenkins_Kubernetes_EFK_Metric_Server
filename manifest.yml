@@ -1,0 +1,6 @@
+---
+- name: Manifest files
+  hosts: localhost
+  tasks:
+    - include: regapp-deployment.yml
+      include: regapp-service.yml
